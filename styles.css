@@ -1,0 +1,109 @@
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* CSS VARIABLES */
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    --font-size: 16px;
+}
+
+/* GLOBAL STYLING  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Figtree, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 375px;
+    height: auto;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    box-shadow: 6px 6px 0px var(--Black);
+}
+
+.svg-container {
+    max-width: 336px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.learning {
+    margin: 10px 0;
+}
+
+.learning p{
+    font-weight: 500;
+    margin:5px 0;
+}
+
+.learning button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: var(--font-size);
+    background-color: var(--Yellow);
+}
+
+.text {
+    margin-bottom: 12px;
+}
+
+.text h1 {
+    margin: 10px 0;
+}
+
+.text p {
+    color: var(--Grey);
+    line-height: 1.2;
+    
+}
+
+.attribution {
+    display: flex;
+    gap: 5px
+}
+
+.attribution img{
+    transform: scale(.75);
+}
+
+.attribution p {
+    font-weight: 800;
+    font-size: var(--font-size);
+    align-self: center;
+}
+
+ @media screen  and (max-width: 380px){
+
+    .container{
+        width: 335px;
+    }
+    .svg-container{
+        width: 300px;
+        position: relative;
+        right: 3px;
+    }
+
+    .text p{
+        font-size: 15px;
+    }
+    
+ }
